@@ -3,7 +3,7 @@
 [{{ site_name }}] {{ notifications_count }} {% translate "new notifications since" %} {{ start_time }}
 
 {% for notification in notifications %}
-- {{ notification.message }}
+- {{ notification.email_message  }}
   {% if notification.rendered_description %}
   {% translate "Description" %}: {{ notification.rendered_description }}
   {% endif %}
